@@ -1,0 +1,102 @@
+.modal {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  z-index: -1;
+  top: 100%;
+  transition: all 0.7s ease;
+}
+
+.modal.active {
+  top: 180px;
+  opacity: 1;
+  z-index: 1;
+}
+
+#fundo-modal {
+  position: fixed;
+  top: 180px;
+  height: 100vh;
+  width: 100%;
+  background: #00000090;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+#fundo-modal.active {
+  top: 180px;
+  opacity: 1;
+  z-index: 0;
+}
+
+.modal-content {
+  width: 420px;
+  margin: 0 auto;
+  border-radius: 3px;
+  padding-bottom: 15px;
+  background-color: white;
+  box-shadow: 1px 1px 10px black;
+}
+
+.modal-header {
+  position: relative;
+  color: white;
+  background-color: rgb(44, 105, 133);
+  padding: 15px;
+  font-size: 12px;
+}
+
+.modal-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 20px;
+}
+
+.modal-form input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.modal-form input,
+select,
+textarea {
+  padding: 8px;
+}
+
+#status-confirm,
+#data-fim,
+#hora-fim,
+#feito-por {
+  display: none;
+}
+
+.modal-footer {
+  text-align: right;
+  right: 10px;
+  padding: 0 20px;
+}
+
+@media (max-width:1000px) {
+  .modal {
+    width: 100vw;
+    margin-top: -75px;
+  }
+  #fundo-modal {
+    margin-top: -75px;
+  }
+  .modal-content{
+    width: 90vw;
+  }
+  .modal-form input,
+  textarea {
+    width: 80vw;
+  }
+  .modal-header {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}

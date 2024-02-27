@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/load.css">
+  <title>Ordem de Serviço</title>
+</head>
+
+<body>
+
+  <div class="contenerForm" id="loginForm">
+    <form>
+      <select name="username" id="username">
+        <option>Usuário</option>
+        <option value="Recepção">Recepção</option>
+        <option value="Governança">Governança</option>
+        <option value="Manutenção">Manutenção</option>
+        <option value="Gerente">Gerente</option>
+      </select>
+      <input type="password" name="password" id="password" placeholder="Senha" disabled>
+      <button type="submit" class="bg">Entrar</button>
+    </form>
+  </div>
+
+  <header>
+    <img src="img/logo.png" alt="Logo">
+    <div class="logOut" id="logoutBtn">
+      <img src="img/logado.png" alt="Sair">
+      <div class="saudacao" id="id">Ola!</div>
+    </div>
+    <h1 class="Title">Cadastro de Serviços</h1>
+
+    <nav id="navLog">
+      <div class="nav">
+        <h3 class="solcitante">Solicitante</h3>
+        <h3 class="local">Local</h3>
+        <h3 class="ocorrencia">Ocorrência</h3>
+        <h3 class="data">Data</h3>
+        <h3 class="horario">Horário</h3>
+
+        <div class="bts-index">
+          <div>
+            <button class="bt aberto" id="btAberto"> &#x1F558; </button>
+            <button class="bt interditado" id="btInterditado"> &#161; </button>
+            <button class="bt concluido" id="btConcluido"> &#10004; </button>
+          </div>
+
+          <div class="pesquisar" id="search">
+            <div>
+              <input type="text" id="searchInput" placeholder="Pesquisar por:" />
+              <button id="searchButton">
+                <img src="img/lupa.png" alt="search">
+              </button>
+            </div>
+
+            <button id="impressao">
+              <img src="img/printer.png" alt="Impressão">
+            </button>
+          </div>
+          <button type="button" class="cadastrarServico bg" id="cadastrarServico">Cadastrar &#9997;</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="preLoad"></div>
+    <div class="tasks-list" id="tasks-list"></div>
+    <div class="tasks-list interditado" id="tasks-list-interditado"></div>
+    <div class="tasks-list concluido" id="tasks-list-concluido"></div>
+    <div class="tasks-list search" id="tasks-list-search"></div>
+    <div class="tasks-list excluir" id="tasks-list-excluir"></div>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <header class="modal-header">
+        <h2>Cadastrar novo Serviço</h2>
+      </header>
+      <div class="preloadModal"></div>
+      <form id="task-form" class="modal-form">
+        <select id="status-confirm">
+          <option value="Aberto">Aberto</option>
+          <option value="Interditado">Interditado</option>
+          <option value="Concluído">Concluído</option>
+          <option value="Excluir">Excluir</option>
+        </select>
+
+        <input type="text" id="nome" placeholder="Solicitante">
+        <input type="text" id="local" placeholder="Local">
+        <textarea id="ocorrencia" cols="80" rows="3" placeholder="Ocorrência"></textarea>
+        <input type="text" id="excluir" placeholder="Motivo para exclusão">
+
+        <span id="data"></span>
+        <span id="hora"></span>
+
+        <span id="data-fim"></span>
+        <span id="hora-fim"></span>
+        <input type="text" id="feito-por" placeholder="Por:">
+      </form>
+
+      <footer class="modal-footer">
+        <button class="salvar bg" id="salvar">Salvar</button>
+        <button class="cancelar bg" id="cancelar">Cancelar</button>
+      </footer>
+    </div>
+  </div>
+  <div id="fundo-modal"></div>
+  <script src="js/login.js" type="module"></script>
+  <script src="js/permission.js" type="module"></script>
+  <script src="js/search.js" type="module"></script>
+  <script src="js/status.js"></script>
+  <script src="js/print.js"></script>
+  <!-- Desenvolvido por: Nahin Moreira -->
+  <!-- Email: nahin_msm@hotmail.com -->
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+.search {
+  margin-right: 6px;
+}
+
+.pesquisar div {
+  position: absolute;
+  display: flex;
+  top: 10px;
+  height: 35px;
+  border: 1px solid;
+  border-radius: 40px;
+}
+
+.pesquisar input {
+  background: none;
+}
+
+#impressao {
+  position: absolute;
+  top: 10px;
+  margin-left: 160px;
+  border: none;
+  background: none;
+}
+
+#impressao img {
+  width: 35px;
+  margin-left: 10px;
+  margin-right: 3px;
+  cursor: pointer;
+  border: none;
+  opacity: 70%;
+  transition: all 0.3s;
+}
+
+#searchInput {
+  border: none;
+  width: 120px;
+  height: 15px;
+  font-size: 14px;
+  margin: auto 0;
+  margin-left: 1px;
+}
+
+#searchInput:focus {
+  outline: none;
+}
+
+#searchButton {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.0);
+  margin-right: 2px;
+  margin-top: 4px; 
+  cursor: pointer;
+}
+
+#searchButton img {
+  width: 25px;
+  opacity: 70%;
+  transition: all 0.3s;
+}
+
+#searchButton img:hover,
+#impressao img:hover {
+  opacity: 100%;
+}
+
+.btnDelete img {
+  width: 15px;
+  margin-left: 10px;
+  float: left;
+}
+
+.statusSearch img {
+  width: 15px;
+  margin-left: 10px;
+  float: left;
+}
+
+.exclui {
+  height: 28px;
+  padding: 7px;
+  text-align: left;
+  border: solid 1px rgba(183, 181, 181, 0.596);
+  border-radius: 3px;
+}
+
+@media(max-width:1000px) {
+  .pesquisar div {
+    height: 29px;
+    position: fixed;
+    top: 105px;
+    right: 10px;
+  }
+
+  #impressao {
+    display: none;
+  }
+
+  #searchInput {
+    width: 85px;
+  }
+
+  .status .status-box {
+    width: 240px;
+  }
+
+  .btnDelete img {
+    width: 19px;
+  }
+
+  div.statusSearch {
+    width: 150px;
+    font-size: 12px;
+  }
+
+  .statusSearch img {
+    width: 18px;
+  }
+
+  .exclui {
+    height: 40px;
+    width: 200px;
+    font-size: 12px;
+  }
+}

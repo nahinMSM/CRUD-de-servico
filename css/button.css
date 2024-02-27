@@ -1,0 +1,236 @@
+.cadastrarServico {
+  background: #1FB6FF;
+  color: #FFF;
+  border: none;
+  border-radius: 3px;
+  height: 40px;
+  width: 210px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bts-index div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bt {
+  height: 22px;
+  width: 67px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 250px 0 0 #000000bd;
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.bt:hover {
+  box-shadow: inset 250px 0 0 #00000000;
+}
+
+.bt.Activ {
+  box-shadow: inset 250px 0 0 #00000000;
+}
+
+.bt.aberto {
+  background-color: green;
+  font-size: 17px;
+}
+
+.bt.interditado {
+  background-color: yellow;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.bt.interditado:hover {
+  color: black;
+}
+
+.bt.concluido {
+  background-color: red;
+  font-size: 18px;
+  color: #FFF;
+}
+
+.deletStatusAberto {
+  padding: 5px 5px;
+  width: 48%;
+  float: right;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 3px;
+  border: none;
+  background-color: red;
+  color: #FFF;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-atualizar {
+  height: 24px;
+  width: 35%;
+  border-radius: 3px;
+  border: none;
+  color: grey;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Atualizar {
+  width: 63%;
+  float: right;
+  height: 24px;
+}
+
+.btn-editStatusAberto {
+  padding: 5px;
+  width: 48%;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 3px;
+  border: none;
+  background-color: #116b99;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-excluir {
+  width: 63%;
+  float: right;
+  height: 24px;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 3px;
+  border: none;
+  color: grey;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-delete {
+  padding: 5px 5px;
+  width: 135px;
+  font-weight: bold;
+  border-radius: 3px;
+  border: none;
+  color: #FFF;
+  background-color: red;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btnDelete {
+  padding: 5px 5px;
+  width: 135px;
+  font-weight: bold;
+  border-radius: 3px;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bg:hover {
+  box-shadow: inset 250px 0 0 #00000055;
+  color: #FFF;
+}
+
+.salvar {
+  background: green;
+  color: white;
+  border: none;
+  padding: 5px 17px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cancelar {
+  background: rgb(243, 57, 37);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+@media(max-width:1000px) {
+  .cadastrarServico {
+    color: transparent;
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .cadastrarServico:before {
+    content: "+";
+    color: white;
+    font-size: 45px;
+    width: 50%;
+    height: 50%;
+  }
+
+  .bts-index {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 90px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    gap: 10px;
+    padding-left: 10px;
+  }
+
+  .bt {
+    position: relative;
+    font-weight: bold;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    gap: 10px;
+    margin-left: 10px;
+  }
+
+  .deletStatusAberto {
+    font-size: 14px;
+  }
+
+  .btn-atualizar {
+    width: 100px;
+    margin-right: 10px;
+    background-color: #116b99;
+    color: #FFF;
+  }
+
+  .btn-excluir{
+    width: 100px;
+    margin-right: 10px;
+    background-color: grey;
+    color: #FFF;
+  }
+
+  .btn-delete {
+    margin-right: 10px;
+  }
+
+  .btn-editStatusAberto,
+  .deletStatusAberto {
+    font-size: 14px;
+    color: white;
+    width: 25%;
+    margin-right: 5px;
+  }
+}

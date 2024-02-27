@@ -1,0 +1,80 @@
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 18px;
+}
+
+header img {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.logOut {
+  display: none;
+  position: absolute;
+  top: 10px;
+  margin-right: 1050px;
+  cursor: pointer;
+}
+.saudacao {
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: rgb(44, 105, 133);
+  transition: 0.3s;
+}
+
+.saudacao:hover {
+  color: red;
+}
+
+.logOut img {
+  width: 50px;
+}
+
+.logOut button {
+  border: none;
+  cursor: pointer;
+  height: 25px;
+}
+
+header h1 {
+  color: rgb(44, 105, 133);
+  width: 1185px;
+}
+
+@media (max-width:1000px) {
+  header {
+    width: 100vw;
+    margin-left: 15px;
+  }
+
+  header img {
+    width: 150px;
+  }
+
+  header h1 {
+    width: 100%;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .logOut {
+    left: 5px;
+  }
+
+  .logOut img {
+    width: 35px;
+  }
+
+  .saudacao {
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 3px;
+  }
+}

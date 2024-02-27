@@ -1,0 +1,221 @@
+main {
+  margin-top: 295px;
+  margin-right: 17px;
+  overflow-y: auto;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+.tasks-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .concluido,
+main .interditado,
+main .search {
+  margin-top: 0;
+  display: none;
+}
+
+.res {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.res-list {
+  display: flex;
+  gap: 5px;
+}
+
+.res p, 
+.res span {
+  padding: 8px;
+  height: 60px;
+  text-align: left;
+  border: solid 1px rgba(183, 181, 181, 0.596);
+  border-radius: 3px;
+}
+
+.res p.nome,
+h3.solcitante {
+  width: 154px;
+}
+
+.res p.local,
+h3.local {
+  width: 130px;
+}
+
+.res p.ocorrencia,
+h3.ocorrencia {
+  width: 391px;
+}
+
+.res p.data,
+h3.data {
+  width: 140px;
+  text-align: center;
+}
+
+.res p.hora,
+h3.horario {
+  width: 135px;
+  text-align: center;
+}
+
+.status {
+  width: 211px;
+}
+
+.status .status-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.interditado .bgStatus {
+  height: 27px;
+  border-radius: 3px;
+  color: black;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.interditado .bgStatus b {
+  font-size: 18px;
+  margin-top: -7px;
+}
+
+.status-box h3 {
+  color: rgb(44, 105, 133);
+  font-size: 18px;
+}
+
+.status-box div {
+  width: 134px;
+  color: #FFF;
+  border-radius: 3px;
+  text-align: center;
+  padding: 3px 0;
+}
+
+.por {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(44, 105, 133);
+  font-weight: bold;
+  gap: 3px;
+}
+
+.por p,
+.por span {
+  height: 25px;
+  width: 135px;
+  color: black;
+  font-weight: normal;
+  padding: 4px 10px;
+}
+
+@media (max-width:1000px) {
+  main {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    width: 100vw;
+    margin-top: 180px;
+    margin-left: 15px;
+    margin-bottom: 90px;
+  }
+
+  .res {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+    box-shadow: 1px 1px 10px black;
+  }
+
+  .res-list {
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 4px;
+    gap: 3px;
+  }
+
+  .res-list:hover {
+    background-color: rgb(244, 215, 177);
+  }
+
+  .res-list p {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .res p.local {
+    text-align: center;
+  }
+
+  .status {
+    width: 98%;
+    display: flex;
+    margin-left: 5px;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(62, 63, 63, 0.253);
+  }
+
+  .status-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .status-box h3 {
+    width: 150px;
+    margin-top: 3px;
+    padding: 3px 0;
+    font-size: 14px;
+    background: #FFF;
+  }
+
+  .status-box .bgStatus {
+    display: block;
+    height: 25px;
+    padding: 3px 0;
+    width: 150px;
+    font-size: 12px;
+  }
+
+  .res-list .nome,
+  .res-list .local,
+  .res-list .ocorrencia,
+  .res-list .data,
+  .res-list .hora {
+    height: auto;
+    font-weight: bolder;
+  }
+
+  .status button {
+    height: 30px;
+  }
+
+  .por {
+    width: 220px;
+    font-size: 15px;
+  }
+
+  .por p,
+  .por span {
+    height: 35px;
+  }
+}
