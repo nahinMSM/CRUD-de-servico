@@ -45,6 +45,6 @@ Desenvolvido por:
 
 ## Link de Teste
 
-Para testar o sistema, acesse: [Link de Teste](https://cadastraservico.netlify.app/)
+Para testar o sistema, acesse: [Link de Teste](https://cadastrodeservico.netlify.app/)
 
 ---
