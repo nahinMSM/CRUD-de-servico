@@ -6,17 +6,14 @@ Este projeto é um sistema CRUD (Create, Read, Update, Delete) para gerenciament
 
  **Aqui está uma demonstração em vídeo do funcionamento do projeto:**
 
-<video src="img/captura-de-tela.mp4" autoplay loop muted controls>
-Seu navegador não suporta a exibição do vídeo. [Clique aqui para baixar o vídeo](./img/video.mp4).
-</video>
+![](img/captura-de-tela.gif)
 
 <br><br>
 
 **Demonstração do layout para dispositivos móveis:**
+
 <div align="center">
-  <video src="img/captura-de-tela-mobile.mp4" autoplay loop muted controls>
-  Seu navegador não suporta a exibição do vídeo. [Clique aqui para baixar o vídeo](./img/mobile-layout.mp4).
-  </video>
+  ![](img/captura-de-tela-mobile.gif)
 </div>
 
 ###
