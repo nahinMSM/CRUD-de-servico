@@ -12,9 +12,10 @@ Este projeto é um sistema CRUD (Create, Read, Update, Delete) para gerenciament
 
 **Demonstração do layout para dispositivos móveis:**
 
-<p align="center">
-  ![](img/captura-de-tela-mobile.gif)
-</p>
+<div align="center">
+    <img title="captura de tela mobile" src="img/captura-de-tela-mobile.gif"/>
+<div>
+
 
 ###
 
