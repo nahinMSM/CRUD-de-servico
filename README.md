@@ -14,7 +14,7 @@ Este projeto é um sistema CRUD (Create, Read, Update, Delete) para gerenciament
 
 <div align="center">
     <img title="captura de tela mobile" src="img/captura-de-tela-mobile.gif"/>
-<div>
+</div>
 
 
 ###
